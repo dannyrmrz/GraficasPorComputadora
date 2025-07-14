@@ -217,12 +217,11 @@ fn main() {
     let polygons = vec![
         Polygon {
             points: vec![
-                Point { x: 321, y: 335 },
-                Point { x: 288, y: 286 },
-                Point { x: 339, y: 251 },
-                Point { x: 374, y: 302 },
+                Point { x: 377, y: 249 },
+                Point { x: 411, y: 197 },
+                Point { x: 436, y: 249 },
             ],
-            fill_color: Color::BLUE, // Azul
+            fill_color: Color::RED, // Rojo
             border_color: Color::WHITE, // Orilla blanca
             is_hole: false,
         },
