@@ -215,6 +215,48 @@ fn main() {
 
     // Define polygons
     let polygons = vec![
+        // Polígono 1: Amarillo con orilla blanca
+        Polygon {
+            points: vec![
+                Point { x: 165, y: 380 },
+                Point { x: 185, y: 360 },
+                Point { x: 180, y: 330 },
+                Point { x: 207, y: 345 },
+                Point { x: 233, y: 330 },
+                Point { x: 230, y: 360 },
+                Point { x: 250, y: 380 },
+                Point { x: 220, y: 385 },
+                Point { x: 205, y: 410 },
+                Point { x: 193, y: 383 },
+            ],
+            fill_color: Color::YELLOW,
+            border_color: Color::WHITE,
+            is_hole: false,
+        },
+        // Polígono 2: Azul con orilla blanca
+        Polygon {
+            points: vec![
+                Point { x: 321, y: 335 },
+                Point { x: 288, y: 286 },
+                Point { x: 339, y: 251 },
+                Point { x: 374, y: 302 },
+            ],
+            fill_color: Color::BLUE,
+            border_color: Color::WHITE,
+            is_hole: false,
+        },
+        // Polígono 3: Rojo con orilla blanca
+        Polygon {
+            points: vec![
+                Point { x: 377, y: 249 },
+                Point { x: 411, y: 197 },
+                Point { x: 436, y: 249 },
+            ],
+            fill_color: Color::RED,
+            border_color: Color::WHITE,
+            is_hole: false,
+        },
+        // Polígono 4: Verde con orilla blanca
         Polygon {
             points: vec![
                 Point { x: 413, y: 177 },
@@ -236,10 +278,11 @@ fn main() {
                 Point { x: 517, y: 144 },
                 Point { x: 466, y: 180 },
             ],
-            fill_color: Color::GREEN, // Verde
-            border_color: Color::WHITE, // Orilla blanca
+            fill_color: Color::GREEN,
+            border_color: Color::WHITE,
             is_hole: false,
         },
+        // Polígono 5: Agujero (blanco con orilla negra)
         Polygon {
             points: vec![
                 Point { x: 682, y: 175 },
@@ -247,8 +290,8 @@ fn main() {
                 Point { x: 735, y: 148 },
                 Point { x: 739, y: 170 },
             ],
-            fill_color: Color::WHITE, // Agujero (blanco)
-            border_color: Color::BLACK, // Orilla negra
+            fill_color: Color::WHITE,
+            border_color: Color::BLACK,
             is_hole: true,
         },
     ];
