@@ -217,13 +217,39 @@ fn main() {
     let polygons = vec![
         Polygon {
             points: vec![
-                Point { x: 377, y: 249 },
-                Point { x: 411, y: 197 },
-                Point { x: 436, y: 249 },
+                Point { x: 413, y: 177 },
+                Point { x: 448, y: 159 },
+                Point { x: 502, y: 88 },
+                Point { x: 553, y: 53 },
+                Point { x: 535, y: 36 },
+                Point { x: 676, y: 37 },
+                Point { x: 660, y: 52 },
+                Point { x: 750, y: 145 },
+                Point { x: 761, y: 179 },
+                Point { x: 672, y: 192 },
+                Point { x: 659, y: 214 },
+                Point { x: 615, y: 214 },
+                Point { x: 632, y: 230 },
+                Point { x: 580, y: 230 },
+                Point { x: 597, y: 215 },
+                Point { x: 552, y: 214 },
+                Point { x: 517, y: 144 },
+                Point { x: 466, y: 180 },
             ],
-            fill_color: Color::RED, // Rojo
+            fill_color: Color::GREEN, // Verde
             border_color: Color::WHITE, // Orilla blanca
             is_hole: false,
+        },
+        Polygon {
+            points: vec![
+                Point { x: 682, y: 175 },
+                Point { x: 708, y: 120 },
+                Point { x: 735, y: 148 },
+                Point { x: 739, y: 170 },
+            ],
+            fill_color: Color::WHITE, // Agujero (blanco)
+            border_color: Color::BLACK, // Orilla negra
+            is_hole: true,
         },
     ];
 
